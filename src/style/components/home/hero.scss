@@ -1,0 +1,213 @@
+.good{
+   display: flex;
+   align-items: center;
+
+   h3{
+      font-size: 1.5rem;
+      font-weight: 700;
+      @include media("<285px") {
+         font-size: 1rem;
+      }
+   }
+   p{
+      font-size: 1.5rem;
+      font-weight: 700;
+      @include media("<285px") {
+         font-size: 1rem;
+      }
+   }
+}
+
+.malam{
+   color:#9ca3af;
+ 
+ }
+ .bulan{
+   color:  #fde047;
+ }
+ 
+ .pagi{
+   color: #38bdf8;
+   
+ }
+ .muncul{
+   color: orange;
+ }
+ .sore{
+   color: orange;
+   
+ }
+ .mata{
+   color: yellow;
+ }
+
+.guguk{
+ margin-top: -60vh;
+   @include media("<phone") {
+      margin-top: -20vh;
+   }
+   @include media("<988px") {
+      margin-top: -40vh;
+   }
+   @include media("<285px") {
+      margin-top: 30vh;
+   }
+   
+  h1{
+     font-size: 4rem;
+     color:  #112969;
+     margin-top: -20vh;
+     @include media("<phone") {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+   }
+   @include media("<285px") {
+      font-size: 1.3rem;
+   }
+  }
+  h3{
+     font-size: 2rem;
+     font-weight: 400;
+     margin-top: -5vh;
+     color: #8a8a8a;
+     @include media("<phone") {
+      font-size: 1.2rem;
+      margin-top: -2rem;
+   }
+   @include media("<285px") {
+      font-size: 0.8rem;
+   }
+  }
+}
+
+.hero{
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.bg1{
+   justify-content: center;
+   display:flex;
+    gap: 1.5rem;
+    img{
+        width: 35px;
+        display: block;
+        @include media("<285px") {
+      width: 25px;
+      }
+    }
+ 
+}
+
+.svg{
+z-index: -10;
+margin-top: 20vh;
+margin-left: -22rem;
+@include media("<phone") {
+
+  margin-left: -7rem;
+}
+@include media("<285px") {
+display: none;
+}
+}
+
+.wrapper{
+   display: inline-flex;
+ }
+ .wrapper .icon{
+   position: relative;
+   margin: 0 20px;
+   cursor: pointer;
+   display: -webkit-flex;
+   display: -ms-flex;
+   display: flex;
+   justify-content: center;
+   -ms-align-items: center;
+   align-items: center;
+   -webkit-flex-direction: column;
+   -ms-flex-direction: column;
+   flex-direction: column;
+   z-index: 3;
+   cursor: pointer;
+   transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+   @include media("<phone") {
+    margin: 0 10px;
+  }
+  @include media("<285px") {
+  margin: 0 5px;
+ }
+ }
+ .wrapper .icon span{
+   position: relative;
+   z-index: 3;
+   height: 60px;
+   width: 60px;
+   display: block;
+   background: #fff;
+   border-radius: 50%;
+   text-align: center;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+ }
+ .wrapper .icon:hover span{
+   color: #fff;
+ }
+ .wrapper .icon span i{
+   font-size: 35px;
+   line-height: 60px;
+ }
+ .wrapper .icon .tooltip{
+   position: absolute;
+   top: 0px;
+   color: #fff;
+   background: #fff;
+   font-size: 20px;
+   padding: 10px 18px;
+   border-radius: 25px;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+   pointer-events: none;
+   opacity: 0;
+   transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+   @include media("<285px") {
+    font-size: 10px;
+ }
+ }
+ .wrapper .icon:hover .tooltip{
+   top: -70px;
+   opacity: 1;
+   pointer-events: auto;
+ }
+ .wrapper .icon .tooltip::before{
+   content: '';
+   position: absolute;
+   height: 16px;
+   width: 16px;
+   background: #fff;
+   left: 50%;
+   bottom: -8px;
+   transform: translateX(-50%) rotate(45deg);
+   transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55);
+ }
+ .wrapper .icon:hover span,
+ .wrapper .icon:hover .tooltip{
+   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+ }
+ .wrapper .html:hover span,
+ .wrapper .html:hover .tooltip,
+ .wrapper .html:hover .tooltip::before{
+   background: #2698e4;
+ }
+
+ .icon{
+   img{
+    @include media("<phone") {
+
+      width: 30px;
+    }
+    @include media("<285px") {
+     width: 20px;
+   }
+   }
+ }

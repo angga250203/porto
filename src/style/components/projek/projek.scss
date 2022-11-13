@@ -1,0 +1,67 @@
+
+  
+ .inilink{
+   text-decoration: none;
+   cursor: pointer;
+ }
+  
+  .projek{
+    @include media(">1000px") {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap:7rem;
+   }
+  }
+
+  .top32{
+    font-size: 3.5rem;
+    display: flex;
+    h1{
+        font-weight: 600;
+        color: #112969;
+    }
+    @include media("<phone") {
+        font-size: 2rem;
+     }
+     @include media("<285px") {
+      font-size: 1.5rem;
+   }
+  }
+
+  .top42{
+    margin-bottom: 10vh;
+    h3{
+      color: #713efd;
+      font-weight: 300;
+      @include media("<285px") {
+        font-size: 1rem;
+     }
+  }
+
+  @include media("<phone") {
+      margin-top: -5vh;
+   }
+  @include media("<1000px",">phone") {
+      margin-top: -10vh;
+      margin-bottom: 5vh;
+   }
+  }
+  
+  
+  
+  
+  
+  .button1{
+  
+      text-align: center;
+  
+  }
+  
+  .bp{
+    background-color:#3efd7e ;
+    padding: 10px 9px;
+    border-radius: 10px;
+   text-decoration: none;
+   
+  }

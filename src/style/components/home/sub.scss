@@ -1,0 +1,76 @@
+.bulat{
+    margin-top: 10vh;
+    width: 130px;
+    height: 130px;
+    background-color: #c5f0fd;
+    border-radius: 50%;
+    @include media("<phone") {
+        width: 100px;
+        height: 100px;
+     }    
+      @include media("<285px") {
+        width: 80px;
+        height: 80px;
+     }
+
+    p{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        rotate: 30deg;
+        position: relative;
+        margin-left: -20px;
+        font-weight: 600;
+        color: #713efd;
+        @include media("<phone") {
+            
+            font-size: 12px;
+            margin-left: -5px;
+         }
+         @include media("<285px") {
+            font-size: 9px;
+         }
+    }
+}
+
+.bagi{
+
+    @include media(">tablet") {
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+     }
+}
+
+.text{
+    h1{
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #112969;
+    @include media("<phone") {
+        font-size: 2rem;
+     }
+     @include media("<285px") {
+        font-size: 1.5rem;
+     }
+    }
+}
+.subtitle{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #6b7280;
+    @include media("<285px") {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+     }
+}
+
+.Accor{
+    margin-top: 3vh;
+    margin-left: 50px;
+    @include media("<tablet") {
+        margin-left: 0;
+     }
+}
+
+

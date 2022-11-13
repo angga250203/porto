@@ -1,0 +1,106 @@
+.active{
+  background-color: #112969;
+  color: #f3f4f6;
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 6px;
+  transition: all ease-in-out .8;
+}
+
+header {
+    width: 100%;
+    z-index: 5;
+  
+    .header-inner {
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img{
+        width: 150px;
+      }
+      .logo{
+       width:120px;
+      height: 120px;
+
+        @include media("<285px") {
+       font-size: 1.2rem;
+       }
+      }
+      a{
+        font-size: 1.4rem;
+        text-decoration: none;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        @include media("<285px") {
+          font-size: 1rem;
+       }
+        &:first-child {
+          margin-left: 0rem;
+        }
+        &:last-child {
+          margin-right: 0rem;
+        }
+    
+      }
+      .navlarge{
+          display: flex;
+          justify-content: space-between;
+          gap: 3rem;
+          margin-left: 9rem;
+          a{
+              
+              font-weight: 500;
+              font-size: 1.2rem;
+              display: block;
+          }
+          
+      
+            
+          @include media("<tablet") {
+            display: none;
+         }
+      }
+
+      .active{
+        background-color: #112969;
+      }
+      
+      nav {
+        width: 100%;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+      .hamburger-menu {
+        cursor: pointer;
+        display: block;
+
+        @include media("<tablet") {
+          background-color:#f3f4f6;
+          padding: 13px 5px;
+          border-radius: 50%;
+       }
+       @include media("<285px") {
+          padding: 10px 4px;
+     }
+     
+        span {
+          height: 3px;
+          width: 30px;
+          margin: 6px;
+          display: block;
+          background: black;
+          @include media("<285px") {
+            width: 20px;
+            height: 1px;
+         }
+          @include media(">tablet") {
+              display: none;
+           }
+        }
+      }
+    }
+  }

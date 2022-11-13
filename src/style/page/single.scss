@@ -1,0 +1,166 @@
+.bagisingel{
+    @include media(">1000px") {
+        display: grid;
+        grid-template-columns:65% auto;
+    
+       
+     }
+}
+
+.judulprojek{
+    font-size: 3.5rem;
+  
+    @include media(">tablet") {
+        margin-top: 5vh;
+     }
+    h1{
+        font-weight: 600;
+        color: #112969;
+    }
+    @include media("<phone") {
+        font-size: 2rem;
+     }
+     @include media("<285px") {
+        font-size: 1.5rem;
+     }
+}
+
+.subprojek{
+    @include media(">930px") {
+        margin-top: -15vh;
+     }
+    @include media("<930px") {
+        margin-top: -5vh;
+     }
+    h3{
+        color: #713efd;
+        font-weight: 400;
+        font-size: 2rem;
+        @include media("<285px") {
+            font-size: 1.2rem;
+         }
+    }
+    @include media("<phone") {
+        margin-top: -5vh;
+     }
+}
+
+
+.single2{
+    @include media(">1000px") {
+       margin-top: 10vh;
+     }
+    img{
+        width: 100%;
+        border-radius:10px ;
+    }
+}
+
+
+    .kategori{
+        margin-top: -2vh;
+        h4{
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #112969;
+        }
+        h2{
+            font-size: 1.2rem;
+            margin-top: -5vh;
+            font-weight: 400;
+            color: #713efd;
+            @include media("<phone") {
+                margin-top: -2vh;
+             }
+             @include media("<930px") {
+                margin-top: -2rem;
+             }
+        }
+    }
+
+    .tekno{
+        margin-top: 10vh;
+        margin-bottom: 3vh;
+        h4{
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #112969;
+        }
+        img{
+            margin-top: -5vh;
+            width: 40px;
+            height: 40px;
+
+        }
+    }
+
+    .live{
+        margin-top: 2vh;
+       a{
+           text-decoration: none;
+           background-color: #713efd;
+           color: white;
+           padding: 5px 7px;
+           border-radius: 5px;
+        }
+    }
+
+    .deskripsi{
+        margin-top: 15vh;
+        @include media("<phone") {
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+         }
+        h3{
+            font-size: 2.5rem;
+            color: #112969;
+            @include media("<phone") {
+                font-size: 1.5rem;
+             }
+             @include media("<285px") {
+                font-size: 1.2rem;
+             }
+        }
+        p{
+            font-size: 1.2rem;
+            color: #713efd;
+            @include media("<phone") {
+                font-size: 1rem;
+             }
+             @include media("<285px") {
+                font-size: 0.8rem;
+             }
+        }
+    }
+
+    .mockup{
+        @include media(">1000px") {
+            margin-top: 10vh;
+            display: grid;
+            grid-template-columns: auto 70%;
+         }
+     
+
+        .hp{
+            @include media("<1000px") {
+                width: 80%;
+                margin-bottom: 5vh;
+             }
+            img{
+                width:200px;
+            }
+        }
+        .semua{
+            img{
+                width: 600px;
+                @include media("<1000px") {
+                    width: 100%;
+                 }
+            }
+        }
+    }
+
+    .kembali{
+        font-size: 3rem;
+        margin-bottom: -5vh;
+    }

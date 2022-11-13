@@ -1,0 +1,140 @@
+.sk{
+  font-size: 3rem;
+  padding-top: 5vh;
+margin-bottom: -2vh;
+font-weight: 400;
+color: rgb(88, 182, 236);
+@include media("<285px") {
+font-size: 2rem;
+}
+}
+
+.fe{
+  font-size: 1.2rem;
+  @include media("<285px") {
+    font-size:0.8rem;
+ }
+  
+}
+
+.fes{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: -4vh;
+  padding-top: 7vh;
+  color: rgb(156, 156, 233);
+  @include media("<phone") {
+    margin-bottom: 2vh;
+  
+    
+  }
+}
+.asu{
+  ul{
+    
+    position: relative;
+    top: 40px;
+    @include media(">1000px") {
+      grid-template-columns: repeat(3,30%);
+      display: grid;
+   }
+   @include media("<phone") {
+    margin-left: -3rem;
+     display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 10vh;
+    
+  }
+
+  
+
+
+    span{
+      font-size: 1.5rem;
+      cursor: pointer;
+      @include media("<phone") {
+        font-size: 1.2rem;
+         
+       }
+       @include media("<285px") {
+      font-size: 0.9rem;
+      }
+   
+
+    }
+    h3{
+      font-size: 2rem;
+    }
+    .baris {
+      display: flex;
+      margin-bottom: 15px;
+      padding: 7px;
+      font-size: 30px;
+      text-transform: uppercase;
+      span {
+        &:hover {
+          & ~ div {
+            transform:  scale(1);
+            opacity: 1;
+          }
+        }
+      
+      }
+    }
+  }
+  .img-cont {
+    position: absolute;
+    width: 70px;
+    transform: translateX(100px) scale(0.8);
+    opacity: 0;
+    transition: 0.6s;
+    margin-left: 9rem;
+    margin-top: -15px;
+    @include media("<phone") {
+     width: 50px;
+     top: -36%;
+     right: 30%;
+     @include media("<285px") {
+     right: 5%;
+     width: 40px;
+     top: -40%;
+   }
+      
+    }
+    
+    img {
+      border: 1px solid rgb(255, 255, 255, 0.5);
+      width: 100%;
+      
+    }
+  }
+
+  .img-cont1 {
+    position: absolute;
+    width: 70px;
+    transform: translateX(100px) scale(0.8);
+    opacity: 0;
+    transition: 0.6s;
+    margin-left: 9rem;
+    margin-top: -15px;
+    @include media("<phone") {
+     width: 50px;
+     top: -75%;
+     right: 30%;
+     @include media("<285px") {
+      right: 5%;
+      width: 40px;
+      top: -80%;
+    }
+      
+    }
+    
+    img {
+      border: 1px solid rgb(255, 255, 255, 0.5);
+      width: 100%;
+      
+    }
+  }
+}
+
+
