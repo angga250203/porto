@@ -11,6 +11,7 @@ import Singel from './page/singel';
 import Animasi from './page/transition';
 import {motion} from "framer-motion"
 import { BsFillMoonStarsFill,BsSun,BsCloudSun } from "react-icons/bs";
+import Icon from './page/aku';
 
 
 
@@ -18,8 +19,7 @@ import { BsFillMoonStarsFill,BsSun,BsCloudSun } from "react-icons/bs";
 
 
 function App() {
-  const date = new Date();
-  const hour = date.getHours();
+
 
   const [preloader,setPreloader] = useState(true);
 
@@ -34,7 +34,7 @@ function App() {
   useEffect(()=>{
     id.current = window.setInterval(()=>{
       setTimer((timer)=>timer-1)
-    },1000)
+    },5000)
   },[])
 
   useEffect(()=>{
@@ -45,12 +45,7 @@ function App() {
 
   return (
      <>
-     {preloader? <div className='loader absolute'>
-     {hour>=12 ? hour>=16 ? 
-        <h2>Good <span className='malam'>Evening <span className='bulan'><BsFillMoonStarsFill/></span></span></h2>: 
-        <h2>Good <span className='sore'>Afternoon<span className='mata'><BsSun/></span></span></h2> :
-        <h2>Good <span className='pagi'>Morning<span className='muncul'><BsCloudSun/></span></span></h2>}
-     </div> :
+     {preloader? <Icon/> :
   <div>
      <Animasi/>
      <motion.div 
